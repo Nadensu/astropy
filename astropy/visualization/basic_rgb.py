@@ -148,7 +148,7 @@ class RGBImageMapping:
         """
         pixmax = float(np.iinfo(output_dtype).max)
 
-        image_rgb *= pixmax
+        image_rgb = image_rgb * pixmax
 
         return image_rgb.astype(output_dtype)
 
